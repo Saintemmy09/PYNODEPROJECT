@@ -26,7 +26,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./my_python_server/Dockerfile
+          file: ./python_server/dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/python-docker:pr
 

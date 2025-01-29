@@ -24,8 +24,8 @@ jobs:
       - name: Build Docker Image for Node.js
         uses: docker/build-push-action@v4
         with:
-          context: ./my_node_server
-          file: ./my_node_server/Dockerfile
+          context: ./mynode_server
+          file: ./mynode_server/dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/node-docker:latest
 
